@@ -1,8 +1,11 @@
 ---
 name: goal
-description: Set a stop condition and loop autonomously inside autopilot until that condition is met, then call task_complete. Triggers on /goal, "set a goal", "goal: ...", "keep going until ...", "don't stop until ...", "loop until ...", "achieve <condition>". Mirrors Claude Code's /goal UX. Subcommands: `goal <condition>` to set, `goal` (no args) to show status, `goal clear` to cancel.
+description: |
+  Set a stop condition and loop autonomously inside autopilot until that condition is met, then call task_complete.
+  Triggers on /goal, "set a goal", "goal <condition>", "keep going until ...", "don't stop until ...", "loop until ...", "achieve <condition>".
+  Mirrors Claude Code's /goal UX. Subcommands: `goal <condition>` to set, `goal` (no args) to show status, `goal clear` to cancel.
 user-invocable: true
-argument-hint: <condition up to 4000 chars> | clear | (empty to show status)
+argument-hint: "<condition up to 4000 chars> | clear | (empty to show status)"
 ---
 
 # /goal — Bounded Autonomous Loop
